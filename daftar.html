@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Member - Digital Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.htmli class="bi bi-microchip me-2"></i>Digital Store
+      </a>
+      <ul class="navbar-nav flex-row">
+        <li class="nav-item mx-2"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item mx-2"><a href="produk.html" class="nav-link">Produk</a></li>
+        <li class="nav-item mx-2"><a href="kontak.html" class="nav-link">Kontak</a></li>
+        <li class="nav-item mx-2"><a href="daftar.html" class="nav-link active">Daftar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="bg-warning py-4 text-center text-dark" style="margin-top: 56px;">
+    <div class="container">
+      <h2>Form Pendaftaran Member</h2>
+      <p class="lead">Daftar sekarang dan dapatkan diskon 10% untuk pembelian pertama</p>
+    </div>
+  </div>
+
+  <div class="container py-5" style="margin-top: 30px;">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body">
+            <form action="" method="POST">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Username</label>
+                  <input type="text" name="username" class="form-control" placeholder="Masukkan username" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Email</label>
+                  <input type="email" name="email" class="form-control" placeholder="Masukkan email" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">Password</label>
+                  <input type="password" name="password" class="form-control" placeholder="Masukkan password" required>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label fw-bold">No Telp</label>
+                  <input type="tel" name="no_telp" class="form-control" placeholder="Masukkan nomor telepon" required>
+                </div>
+                <div class="col-md-12">
+                  <label class="form-label fw-bold">Lahir Bulan Tahun</label>
+                  <input type="text" name="lahir" class="form-control" placeholder="Contoh: 1 Januari 2000" required>
+                </div>
+              </div>
+
+              <hr class="my-4">
+
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success btn-lg">
+                  <i class></i>Daftar Sekarang
+                </button>
+              </div>
+
+              <div class="text-center mt-3">
+                <small class="text-muted">
+                  Dengan mendaftar, Anda menyetujui Syarat & Ketentuan kami
+                </small>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white py-3 text-center">
+    <div class="container">
+      <p class="mb-0">Copyright &copy; UAS Pemrograman Web 1 (242011241)</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
