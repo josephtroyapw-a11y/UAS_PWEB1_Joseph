@@ -7,19 +7,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
-  <style>
-    #success {
-      display: none;
-    }
-    #success:target {
-      display: block;
-      animation: fadeIn 0.5s;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-  </style>
 </head>
 <body>
   <nav class="navbar navbar-dark bg-dark fixed-top">
@@ -35,24 +22,20 @@
       </ul>
     </div>
   </nav>
-  <div id="success" class="container mt-4">
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-      <i class="bi bi-check-circle me-2"></i><strong>Selamat!</strong> Akun Anda telah terdaftarkan.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  </div>
+
   <div class="bg-warning py-4 text-center text-dark" style="margin-top: 56px;">
     <div class="container">
       <h2>Form Pendaftaran Member</h2>
       <p class="lead">Daftar sekarang dan dapatkan diskon 10% untuk pembelian pertama</p>
     </div>
   </div>
+
   <div class="container py-5" style="margin-top: 30px;">
     <div class="row justify-content-center">
       <div class="col-md-8">
         <div class="card border-0 shadow-sm">
           <div class="card-body">
-            <form action="#success" method="GET">
+            <form action="verif.html" method="GET">
               <div class="row g-3">
                 <div class="col-md-6">
                   <label class="form-label fw-bold">Username</label>
@@ -75,12 +58,15 @@
                   <input type="text" name="lahir" class="form-control" placeholder="Contoh: 1 Januari 2000" required>
                 </div>
               </div>
+
               <hr class="my-4">
+
               <div class="d-grid">
                 <button type="submit" class="btn btn-success btn-lg">
                   <i class="bi bi-check-circle me-2"></i>Daftar Sekarang
                 </button>
               </div>
+
               <div class="text-center mt-3">
                 <small class="text-muted">
                   Dengan mendaftar, Anda menyetujui Syarat & Ketentuan kami
@@ -92,7 +78,7 @@
       </div>
     </div>
   </div>
-  
+
   <footer class="bg-dark text-white py-3 text-center">
     <div class="container">
       <p class="mb-0">Copyright &copy; UAS Pemrograman Web 1 (242011241)</p>
